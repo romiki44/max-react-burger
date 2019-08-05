@@ -5,7 +5,6 @@ import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 import * as actions from '../../store/actions/index';
 import {connect} from 'react-redux';
 import Spinner from '../../components/UI/Spinner/Spinner';
-import { stat } from 'fs';
 
 class Orders extends Component {
   componentDidMount() {

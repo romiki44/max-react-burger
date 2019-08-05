@@ -4,8 +4,3 @@
   margin: auto;
 }
 
-@media (min-width: 500px) {
-  .CheckoutSummary {
-    width: 450px;
-  }
-}
