@@ -6,9 +6,9 @@ import * as actions from '../actions/index';
 
 export function* logoutSaga(action) {
   //vraj lepsie pre unit testy
-  yield call([localStorage, 'remove'], "token");
-  yield call([localStorage, 'remove'], "expirationDate");
-  yield call([localStorage, 'remove'], "userId");
+  yield call([localStorage, 'removeItem'], "token");
+  yield call([localStorage, 'removeItem'], "expirationDate");
+  yield call([localStorage, 'removeItem'], "userId");
   
   //yield localStorage.removeItem('token');
   //yield localStorage.removeItem('expirationDate');

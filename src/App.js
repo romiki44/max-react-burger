@@ -10,22 +10,10 @@ import {connect} from 'react-redux';
 //import asyncComponent from './hoc/asyncComponenet/asyncComponent';
 import * as actions from './store/actions/index';
 
-// const asyncCheckout=asyncComponent(()=>{
-//   return import('./containers/Checkout/Checkout');
-// });
-
-// const asyncOrders=asyncComponent(()=>{
-//   return import('./containers/Orders/Orders');
-// });
-
-// const asyncAuth=asyncComponent(()=>{
-//   return import('./containers/Auth/Auth');
-// });
-
 class App extends Component {
   componentDidMount() {
     this.props.onTryAutoSignup();
-  }
+  };
 
   render() {
     let routes=(
@@ -56,8 +44,8 @@ class App extends Component {
         </Layout>
       </div>
     );
-  }
-};
+    }
+  };
 
 const mapStateToProps=state=>{
   return {
